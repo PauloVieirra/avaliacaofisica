@@ -1,0 +1,83 @@
+.scheduling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scheduling h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.scheduling-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.scheduling-content p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.scheduling-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scheduling-content li {
+  color: #444;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.scheduling-content li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .scheduling {
+    padding: 1rem;
+  }
+  
+  .scheduling h1 {
+    font-size: 1.5rem;
+  }
+  
+  .scheduling-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .scheduling {
+    padding: 0.5rem;
+  }
+
+  .scheduling h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .scheduling-content {
+    padding: 1rem;
+  }
+
+  .scheduling-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .scheduling-content li {
+    font-size: 0.9rem;
+    padding: 0.6rem 0;
+  }
+}

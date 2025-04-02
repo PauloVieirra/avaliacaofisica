@@ -3,18 +3,32 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
   box-sizing: border-box;
 }
 
 .App {
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1280px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #f0f8ff;
+}
+
+.main-content {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 200px;
+  }
 }
 
 .logo {
