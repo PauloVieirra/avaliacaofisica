@@ -6,6 +6,7 @@ import WorkoutDetails from './components/WorkoutDetails';
 import Scheduling from './components/Scheduling';
 import EventDetails from './components/EventDetails';
 import Navigation from './components/Navigation';
+import Nutrition from './components/Nutrition';
 import { ThemeProvider } from './context/ThemeContext';
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/workouts/:id" element={<WorkoutDetails />} />
               <Route path="/agendamento" element={<Scheduling />} />
               <Route path="/evento/:id" element={<EventDetails />} />
+              <Route path="/nutricao" element={<Nutrition />} />
             </Routes>
           </div>
         </div>

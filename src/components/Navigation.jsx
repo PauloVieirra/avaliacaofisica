@@ -35,8 +35,10 @@ const Navigation = () => {
        
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
         <li><Link to="/avaliacao" onClick={toggleMenu}>Avaliação Física</Link></li>
-        <li><Link to="/treinos" onClick={toggleMenu}>Treinos</Link></li>
+        <li><Link to="/treinos" onClick={toggleMenu}>Treinos</Link></li> 
+        <li><Link to="/nutricao" onClick={toggleMenu}>Nutrição</Link></li>
         <li><Link to="/agendamento" onClick={toggleMenu}>Agendamento</Link></li>
+      
       </ul>
     </nav>
   );

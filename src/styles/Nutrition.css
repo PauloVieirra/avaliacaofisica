@@ -1,0 +1,190 @@
+.nutrition-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.nutrition-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.nutrition-header h1 {
+  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.nutrition-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.calculator-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.calculator-section h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.calculator-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.calculate-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.calculate-btn:hover {
+  background-color: #357abd;
+}
+
+.result-box {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.result-box h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.calories-result {
+  font-size: 2rem;
+  color: #4a90e2;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.nutrition-tips {
+  margin-bottom: 3rem;
+}
+
+.nutrition-tips h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tip-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.tip-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.tip-card p {
+  color: #666;
+  line-height: 1.4;
+}
+
+.meal-planning {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.meal-planning h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.meal-tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.meal-tip {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.meal-tip h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.meal-tip p {
+  color: #666;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .nutrition-container {
+    padding: 1rem;
+  }
+
+  .nutrition-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .calculator-section,
+  .meal-planning {
+    padding: 1.5rem;
+  }
+
+  .tips-grid,
+  .meal-tips {
+    grid-template-columns: 1fr;
+  }
+}
