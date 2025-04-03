@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 import '../styles/Navigation.css';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,6 +18,16 @@ const Navigation = () => {
         <span></span>
         <span></span>
         <span></span>
+      </div>
+      <div className="theme-switch">
+        <label className="switch">
+          <input
+            type="checkbox"
+            checked={isDarkMode}
+            onChange={toggleTheme}
+          />
+          <span className="slider"></span>
+        </label>
       </div>
      
      

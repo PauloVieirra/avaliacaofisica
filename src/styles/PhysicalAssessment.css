@@ -4,52 +4,74 @@
   flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
 .physical-assessment h1 {
   text-align: center;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .form-section {
   width: 100%;
   background-color: #f9f9f9;
   border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .physical-assessment {
-    padding: 8px;
+    padding: 1.5rem;
+  }
+
+  .physical-assessment h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 
   .form-section {
-    padding: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .form-group input,
   .form-group select,
   .form-group textarea {
-    font-size: 14px;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
   }
+}
 
-  .submit-button {
-    padding: 10px 20px;
-    font-size: 14px;
+@media (max-width: 380px) {
+  .physical-assessment {
+    padding: 1rem;
   }
 
   .physical-assessment h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  .form-section h2 {
-    font-size: 1.2em;
+  .form-section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
   }
 }
 

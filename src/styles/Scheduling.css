@@ -45,7 +45,7 @@
 
 @media (max-width: 768px) {
   .scheduling {
-    padding: 1rem;
+    padding: 16px;
   }
   
   .scheduling h1 {
@@ -53,13 +53,13 @@
   }
   
   .scheduling-content {
-    padding: 1.5rem;
+    padding: 16px;
   }
 }
 
 @media (max-width: 380px) {
   .scheduling {
-    padding: 0.5rem;
+    padding: 16px;
   }
 
   .scheduling h1 {
@@ -68,7 +68,7 @@
   }
 
   .scheduling-content {
-    padding: 1rem;
+    padding: 16px;
   }
 
   .scheduling-content p {

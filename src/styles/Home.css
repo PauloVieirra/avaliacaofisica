@@ -46,53 +46,137 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
 }
 
 .home-content h1 {
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
 .home-content p {
   color: #666;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
   .nav-menu ul {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .nav-menu a {
     display: block;
     width: 100%;
     text-align: center;
+    padding: 0.75rem;
   }
   
   .home-content {
-    padding: 1rem;
+    padding: 16px;
   }
   
   .home-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+    padding: 0 16px;
   }
 }
 
 @media (max-width: 380px) {
   .home-content {
-    padding: 0.5rem;
+    padding: 16px;
   }
   
   .home-content h1 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
   
   .home-content p {
     font-size: 0.9rem;
+    padding: 0 16px;
+  }
+}
+
+.performance-chart {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 20px;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.performance-chart h2 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.metric-selector {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.metric-selector label {
+  color: #666;
+  font-weight: 500;
+}
+
+.metric-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.metric-select:hover {
+  border-color: #4a90e2;
+}
+
+.metric-select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+@media (max-width: 768px) {
+  .performance-chart {
+    padding: 20px 15px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .performance-chart h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .metric-selector {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .metric-select {
+    width: 100%;
+    max-width: 300px;
   }
 }
