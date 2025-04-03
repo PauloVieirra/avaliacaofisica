@@ -9,10 +9,10 @@ const Home = () => {
   const [selectedMetric, setSelectedMetric] = useState('bodyWeight');
 
   const metricOptions = [
-    { value: 'bodyWeight', label: 'Body Weight (kg)', color: '#ffc658' },
-    { value: 'workoutFrequency', label: 'Workout Frequency', color: '#8884d8' },
-    { value: 'bodyFat', label: 'Body Fat %', color: '#ff7300' },
-    { value: 'fitnessScore', label: 'Fitness Score', color: '#82ca9d' }
+    { value: 'bodyWeight', label: 'Peso Corporal (kg)', color: '#ffc658' },
+    { value: 'workoutFrequency', label: 'Frequência de Treinos', color: '#8884d8' },
+    { value: 'bodyFat', label: 'Percentual de Gordura', color: '#ff7300' },
+    { value: 'fitnessScore', label: 'Pontuação Fitness', color: '#82ca9d' }
   ];
 
   const selectedMetricData = metricOptions.find(option => option.value === selectedMetric);
@@ -20,13 +20,13 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-content">
-        <h1>Welcome to Your Fitness Journey</h1>
-        <p>Track your progress, schedule workouts, and achieve your fitness goals with us.</p>
+        <h1>Bem-vindo à Sua Jornada Fitness</h1>
+        <p>Acompanhe seu progresso, agende treinos e alcance seus objetivos fitness conosco.</p>
         
         <div className="performance-chart">
-          <h2>Your Performance Over Time</h2>
+          <h2>Seu Desempenho ao Longo do Tempo</h2>
           <div className="metric-selector">
-            <label htmlFor="metric-select">Select Metric: </label>
+            <label htmlFor="metric-select">Selecionar Métrica: </label>
             <select
               id="metric-select"
               value={selectedMetric}

@@ -1,7 +1,7 @@
 export const userPerformanceData = {
   monthlyMetrics: [
     {
-      month: "January 2024",
+      month: "Janeiro 2024",
       workoutFrequency: 12,
       bodyWeight: 75.5,
       bodyFat: 18.2,
@@ -9,7 +9,7 @@ export const userPerformanceData = {
       muscleMass: 58.3
     },
     {
-      month: "December 2023",
+      month: "Dezembro 2023",
       workoutFrequency: 10,
       bodyWeight: 76.8,
       bodyFat: 19.1,
@@ -17,7 +17,7 @@ export const userPerformanceData = {
       muscleMass: 57.8
     },
     {
-      month: "November 2023",
+      month: "Novembro 2023",
       workoutFrequency: 8,
       bodyWeight: 77.2,
       bodyFat: 19.8,
@@ -25,7 +25,7 @@ export const userPerformanceData = {
       muscleMass: 57.2
     },
     {
-      month: "October 2023",
+      month: "Outubro 2023",
       workoutFrequency: 15,
       bodyWeight: 78.0,
       bodyFat: 20.2,
@@ -33,7 +33,7 @@ export const userPerformanceData = {
       muscleMass: 56.9
     },
     {
-      month: "September 2023",
+      month: "Setembro 2023",
       workoutFrequency: 13,
       bodyWeight: 78.5,
       bodyFat: 20.5,
@@ -41,7 +41,7 @@ export const userPerformanceData = {
       muscleMass: 56.5
     },
     {
-      month: "August 2023",
+      month: "Agosto 2023",
       workoutFrequency: 11,
       bodyWeight: 79.0,
       bodyFat: 21.0,
