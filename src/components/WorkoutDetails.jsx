@@ -32,7 +32,7 @@ const WorkoutDetails = () => {
     <div className="workout-details">
       <div className="workout-details-header">
         <div className="workout-details-header-content">
-          <div className="workout-video-container">
+          <div className="workout-video-container" style={!currentVideo ? { backgroundImage: `url(${workout.imgtreino})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
             {currentVideo && (
               <ReactPlayer
                 className="workout-video"

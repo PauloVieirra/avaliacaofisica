@@ -30,13 +30,14 @@ const Workouts = () => {
         {filteredWorkouts.map(workout => (
           <Link to={`/workouts/${workout.id}`} key={workout.id} className="workout-card">
             <img 
-              src={`/images/workouts/${workout.category.toLowerCase()}.jpg`} 
+              src={workout.imgtreino} 
               alt={workout.name} 
               className="workout-image"
             />
             <div className="workout-header">
               <h2>{workout.name}</h2>
               <span className="workout-category">{workout.category}</span>
+              
             </div>
             <p className="workout-description">{workout.description}</p>
             <div className="workout-details">
